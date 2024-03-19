@@ -1,0 +1,41 @@
+.bras-hero-section{
+    padding: 5%;
+    display: grid;
+    gap: 2%;
+    grid-template-columns: repeat(4 , 1fr);
+}
+.bras-hero-section .card{
+    width: 100%;
+    /* min-height: 80%; */
+    height: 100%;
+}
+.bras-hero-section .card img{
+    height: 80%;
+}
+.bras-hero-section .card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.addToKart-btn{
+    background-color: var(--dark);
+    font-weight: bold;
+    color: aliceblue;
+}
+.addToKart-btn:hover{
+    background-color: var(--light);
+    color: #272727;
+}
+@media screen and (max-width:771px) {
+    .bras-hero-section{
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
+@media screen and (max-width:600px) {
+    .bras-hero-section{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .bras-hero-section .card .card-body .row .col-4{
+        padding: 0;
+    }
+}

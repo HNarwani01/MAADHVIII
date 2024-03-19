@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      overflow-x: hidden;
+    }
+    .main{
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(225, 142, 33);
+      position: relative;
+      overflow: hidden;
+      bottom: -50%;
+    }
+    .main::after{
+      position: absolute;
+      border-radius: 80% 50% 30% 40%;
+      content: '';
+      width: 100vw;
+      background-color: lightblue;
+      aspect-ratio: 1/1;
+      animation: rotate 2s ease-in-out infinite;
+    }
+    @keyframes rotate {
+      from{
+        transform: rotate(0deg);
+      }to{
+        transform: rotate(360deg);
+      }
+    }
+    .second{
+      width: 100vw;
+      height: 100vh;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+
+  </div>
+  <div class="second">
+
+  </div>
+</body>
+</html>

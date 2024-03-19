@@ -1,0 +1,46 @@
+.carousel{
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+    margin: 10px 0px;
+}
+.carousel .boxes{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.carousel .boxes  .slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.carousel .boxes  .slide:nth-child(1){
+    left: -100%;
+}
+.carousel .boxes  .slide:nth-child(2){
+    left: 0%;
+}
+.carousel .boxes  .slide:nth-child(3){
+    left: 100%;
+}
+.carousel .boxes  .slide:nth-child(4){
+    left: 200%;
+}
+.carousel .buttons{
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+}
+.carousel .buttons button{
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    outline: none;
+    
+}

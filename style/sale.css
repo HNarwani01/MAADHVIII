@@ -1,0 +1,55 @@
+/* 
+    this file does not have all basic properties for that visit to index.css
+ */
+.sale-hero-section {
+   width: 95%;
+   margin: 0px auto;
+   min-height: 60vh;
+   height: auto;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   /* Default: 4 elements in a row */
+   gap: 2%;
+   margin-bottom: 5%;
+}
+.sale-hero-section .card{
+   padding: 10px;
+}
+.sale-hero-section .card img{
+   cursor: pointer;
+}
+.sale-hero-section .card .info{
+   display: flex;
+   justify-content: space-between;
+   font-size: 12px;
+   font-weight: bold;
+}
+.sale-hero-section .card .info .price{
+   color: green;
+   font-size: 16px;
+}
+.sale-hero-section .card .info .price del{
+   color: red;
+}
+.sale-hero-section .card button{
+   border: none;
+   padding: 5px 0px;
+   background-color: var(--dark);
+   color: aliceblue;
+   font-weight: bold;
+   border-radius: 10px;
+}
+@media screen and (max-width:991px) {
+   .sale-hero-section{
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2%;
+      margin-bottom: 15%;
+   }
+}
+@media screen and (max-width:767px) {
+   .sale-hero-section{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2%;
+      margin-bottom: 65%;
+   }
+}
