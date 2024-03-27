@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .nav-pc{
+            width: 90vw;
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0px auto;
+            height: 5vh;
+            /* background-color: blue; */
+            align-items: center;
+            list-style: none;
+            font-size: 20px;
+
+        }
+        .nav-pc li a{
+            text-decoration: none;
+            color: #555;
+        }
+        .nav-pc li a:hover{
+            color: black;
+        }
+        .nav-mobile-container{
+            display: none;
+        }
+        .nav-mobile{
+            width: 90vw;
+            height: 10vh;
+            margin: 0px auto;
+            overflow-x: auto;
+            display: flex;
+            gap: 5%;
+            justify-content: space-evenly;
+        }
+        .nav-mobile a img{
+            height: 100%;
+        }
+        @media screen and (max-width:1000px) {
+            .nav-pc-container{
+                display: none;
+            }
+           .nav-mobile-container{
+            display: block;
+           } 
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav-pc-container">
+        <ul class="nav-pc">
+            <li><a href="">Bra</a></li>
+            <li><a href="">Panties</a></li>
+            <li><a href="">Sportwear</a></li>
+            <li><a href="">Lingerie set</a></li>
+            <li><a href="">Shapewear</a></li>
+            <li><a href="">Trending</a></li>
+            <li><a href="">Mega deals</a></li>
+            <li><a href="">Nightwear</a></li>
+            <li><a href="">accessories</a></li>
+            <li><a href="">KidZone</a></li>
+        </ul>
+    </div>
+    <div class="nav-mobile-container">
+        <div class="nav-mobile">
+            <a href="bras.html"><img src="./src/nb-2.webp" alt="Bra-image"></a>
+            <a href="#"><img src="./src/nb-4.webp" alt="panty-image"></a>
+            <a href="#"><img src="./src/nb-3.png" alt="sports wear"></a>
+            <a href=""><img src="./src/nb-1.png" alt="lingerie"></a>
+            <a href="#"><img src="./src/nb-5.webp" alt="shapewear"></a>
+            <a href="#"><img src="./src/nb-7.png" alt="trending"></a>
+            <a href="sale.html"><img src="./src/nb-8.png" alt="mega deal"></a>
+            <a href="#"><img src="./src/nb-9.png" alt="night wear"></a>
+            <a href="#"><img src="./src/nb-6.png" alt="accessories"></a>
+            <a href="#"><img src="./src/nb-10.png" alt="kid zone"></a>
+        </div>
+    </div>
+</body>
+</html>

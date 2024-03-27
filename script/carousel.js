@@ -16,7 +16,9 @@ function showSlider(type) {
     nextButton.style.pointerEvents='none';
     preButton.style.pointerEvents='none';
     coreusel.classList.remove('pre','next')
+    stopAutoSlide()
     let item = document.querySelectorAll('.carosel .list .item');
+
     if (type ==='next') {
         listHtml.appendChild(item[0]);
         coreusel.classList.add('next');
@@ -30,6 +32,7 @@ function showSlider(type) {
         nextButton.style.pointerEvents='auto';
         preButton.style.pointerEvents='auto';
     },2000)
+    startAutoSlide()
 }
 seeMoreButton.forEach(button =>{
     button.onclick = function () {
@@ -39,3 +42,15 @@ seeMoreButton.forEach(button =>{
 backButton.onclick = function () {
     coreusel.classList.remove('showDetail');
 }
+
+
+let intervalId;
+function startAutoSlide() {
+    intervalId = setInterval(function() {
+        showSlider('next');
+    }, 3000);
+}
+function stopAutoSlide() {
+    clearInterval(intervalId);
+}
+startAutoSlide()
