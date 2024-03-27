@@ -72,24 +72,26 @@ body {
 }
 
 .name-heading {
-    width: 20%;
+    width: 22%;
     font-family: var(--logo-font);
     color: var(--dark);
     height: 100%;
     display: flex;
+    gap: 3%;
     align-items: center;
     /* justify-content: space-around; */
-    flex-direction: column;
+    /* flex-direction: column; */
     /* background-color: #ae0029;    */
 }
 .name-heading img{
-    height: 10vh;
+    height: 8vh;
     cursor: pointer;
+    margin: auto 0px;
 }
 .name-heading .name {
     margin: auto;
     cursor: pointer;
-    font-size: 12px;
+    /* font-size: 12px; */
     margin: 0px;
 }
 
@@ -228,12 +230,11 @@ body {
     display: flex;
     justify-content: space-evenly;
     margin: 0px auto;
-    height: 5vh;
+    height: 10vh;
     /* background-color: blue; */
     align-items: center;
     list-style: none;
     font-size: 20px;
-
 }
 .nav-pc li a{
     text-decoration: none;
