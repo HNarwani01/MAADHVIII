@@ -78,12 +78,19 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
+    /* justify-content: space-around; */
+    flex-direction: column;
     /* background-color: #ae0029;    */
 }
-
+.name-heading img{
+    height: 10vh;
+    cursor: pointer;
+}
 .name-heading .name {
     margin: auto;
     cursor: pointer;
+    font-size: 12px;
+    margin: 0px;
 }
 
 .search-box {
