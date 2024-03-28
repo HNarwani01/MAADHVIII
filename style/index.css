@@ -73,8 +73,8 @@ body {
 
 .name-heading {
     width: 22%;
-    font-family: var(--logo-font);
-    color: var(--dark);
+    font-family: cursive;
+    /* color: var(--dark); */
     height: 100%;
     display: flex;
     gap: 3%;
@@ -89,10 +89,11 @@ body {
     margin: auto 0px;
 }
 .name-heading .name {
-    margin: auto;
+    /* margin: auto; */
     cursor: pointer;
-    /* font-size: 12px; */
+    font-size: 200%;
     margin: 0px;
+    font-weight: bold;
 }
 
 .search-box {
@@ -230,7 +231,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     margin: 0px auto;
-    height: 5vh;
+    height: 10vh;
     /* background-color: blue; */
     align-items: center;
     list-style: none;
