@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
         }
-        .nav-pc{
+
+        .nav-pc {
             width: 90vw;
             display: flex;
             justify-content: space-evenly;
@@ -21,17 +23,40 @@
             font-size: 20px;
 
         }
-        .nav-pc li a{
+
+        .nav-pc li a {
             text-decoration: none;
             color: #555;
         }
-        .nav-pc li a:hover{
+
+        .nav-pc .explore {
+            position: relative;
+        }
+
+        .nav-pc .explore::after {
+            position: absolute;
+            content: '';
+            border-right: 2px solid #555;
+            height: 100%;
+            right: -25%;
+        }
+        .nav-pc .explore::before {
+            position: absolute;
+            content: '';
+            border-left: 2px solid #555;
+            height: 100%;
+            left: -25%;
+        }
+
+        .nav-pc li a:hover {
             color: black;
         }
-        .nav-mobile-container{
+
+        .nav-mobile-container {
             display: none;
         }
-        .nav-mobile{
+
+        .nav-mobile {
             width: 90vw;
             height: 10vh;
             margin: 0px auto;
@@ -40,48 +65,57 @@
             gap: 5%;
             justify-content: space-evenly;
         }
-        .nav-mobile a img{
+
+        .nav-mobile a img {
             height: 100%;
         }
+
         @media screen and (max-width:1000px) {
-            .nav-pc-container{
+            .nav-pc-container {
                 display: none;
             }
-           .nav-mobile-container{
-            display: block;
-           } 
+
+            .nav-mobile-container {
+                display: block;
+            }
         }
     </style>
 </head>
+
 <body>
-    
+
     <div class="nav-pc-container">
         <ul class="nav-pc">
-            <li><a href="">Bra</a></li>
+            <li><a href="">New Arrivals</a></li>
+            <li class="explore"><a href="">Explore</a></li>
+            <li><a href="bras.html">Bra</a></li>
             <li><a href="">Panties</a></li>
+            <li><a href="">Sleepwear</a></li>
             <li><a href="">Sportwear</a></li>
-            <li><a href="">Lingerie set</a></li>
             <li><a href="">Shapewear</a></li>
-            <li><a href="">Trending</a></li>
-            <li><a href="">Mega deals</a></li>
-            <li><a href="">Nightwear</a></li>
+            <li><a href="">Lingerie set</a></li>
             <li><a href="">accessories</a></li>
+            <li><a href="">Skins hair</a></li>
             <li><a href="">KidZone</a></li>
+            <li><a href="">Mega deals</a></li>
         </ul>
     </div>
     <div class="nav-mobile-container">
         <div class="nav-mobile">
+            <a href=""><img src="./src/nb-11.png" alt="new Arrivals"></a>
+            <a href="bras.html"><img src="./src/nb-12.png" alt="Explore"></a>
             <a href="bras.html"><img src="./src/nb-2.webp" alt="Bra-image"></a>
             <a href="#"><img src="./src/nb-4.webp" alt="panty-image"></a>
-            <a href="#"><img src="./src/nb-3.png" alt="sports wear"></a>
-            <a href=""><img src="./src/nb-1.png" alt="lingerie"></a>
-            <a href="#"><img src="./src/nb-5.webp" alt="shapewear"></a>
-            <a href="#"><img src="./src/nb-7.png" alt="trending"></a>
-            <a href="sale.html"><img src="./src/nb-8.png" alt="mega deal"></a>
             <a href="#"><img src="./src/nb-9.png" alt="night wear"></a>
+            <a href="#"><img src="./src/nb-3.png" alt="sports wear"></a>
+            <a href="#"><img src="./src/nb-5.webp" alt="shapewear"></a>
+            <a href=""><img src="./src/nb-1.png" alt="lingerie"></a>
             <a href="#"><img src="./src/nb-6.png" alt="accessories"></a>
+            <a href="#"><img src="./src/nb-7.png" alt="Skins hair"></a>
             <a href="#"><img src="./src/nb-10.png" alt="kid zone"></a>
+            <a href="sale.html"><img src="./src/nb-8.png" alt="mega deal"></a>
         </div>
     </div>
 </body>
+
 </html>
